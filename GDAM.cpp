@@ -1,10 +1,10 @@
 /* GDAM - Glider Database Alternative with Mongo
  * 
- * A daemon that monitors given glider "from-glider" folders.
- * When a new file is uploaded it converts it to ASCII using
- * Webb's dbd2asc, parses it, then loads it into a mongo database
+ * A program that parses given "from-glider" folders.
+ * When a new file is newer than the last processing time, 
+ * it converts it to ASCII using Webb's dbd2asc, parses it, 
+ * then loads it into a mongo database
  *
- * inotify code derived from The Linux Programming Interface by Michael Kerrisk Example 19-1 p. 382
  */
 
 #include <iostream>
@@ -30,8 +30,6 @@
 #include "GliderDeploymentDetails.hpp"
 #include "MongoGliderDataExporter.hpp"
 #include "MergedGliderDataFile.hpp"
-
-#define BUF_LEN (10 * (sizeof(struct inotify_event) + NAME_MAX + 1))
 
 using namespace std;
 using namespace boost;
