@@ -20,4 +20,4 @@ To run GDAM on our servers, we have done the following:
 2. In the cron job, it rsyncs files from the glider server to the processing server
 3. After the rsync is complete, GDAM is run inside the cron job with the following command:
 
-<path-to-GDAM>/GDAM <glider-name>:<path-to-glider-files> <mongo-connection-string>
+`(path-to-GDAM)/GDAM (glider-name):(path-to-glider-files) (mongo-connection-string)`
