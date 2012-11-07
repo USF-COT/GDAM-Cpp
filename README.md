@@ -22,4 +22,4 @@ To run GDAM on our servers, we have done the following:
 
 `(path-to-GDAM)/GDAM (glider-name):(path-to-glider-files) (mongo-connection-string)`
 
-*NOTE: dbd2asc is property of Teledyne Webb
+**NOTE: dbd2asc is property of Teledyne Webb**
